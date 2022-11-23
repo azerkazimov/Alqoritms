@@ -1,0 +1,2 @@
+# Alqoritms
+Find string length

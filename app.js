@@ -7,9 +7,22 @@ function getStringLength(str) {
 let resultLength = getStringLength(word);
 console.log(resultLength);
 
+// function findStringLength(str) {
+//   counter = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.length !== " ") {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// let result = findStringLength(word);
+// console.log(result);
 
 function findStringLength(str) {
-  return str.substr().length;
+  let spaceRemove = str.split(" ").length - 1;
+  return str.length - spaceRemove;
 }
 
 let result = findStringLength(word);
